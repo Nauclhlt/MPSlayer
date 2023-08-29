@@ -85,3 +85,17 @@ function onClickBirdsStop()
     audio.pause();
     audio.currentTime = 0;
 }
+
+function onClickSolong()
+{
+    let audio = document.getElementById("audioSolong");
+    audio.currentTime = 0;
+    audio.play();
+}
+
+function onClickSolongStop()
+{
+    let audio = document.getElementById("audioSolong");
+    audio.pause();
+    audio.currentTime = 0;
+}
