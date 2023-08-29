@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MPSlayer - Mp3 player</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <audio id="audioKnock" src="audio/knock.mp3"></audio>
+        <audio id="audioFrog" src="audio/frog.mp3"></audio>
+        <audio id="audioDoor" src="audio/door.mp3"></audio>
+        <audio id="audioRain" src="audio/rain.mp3"></audio>
+        <audio id="audioThunder" src="audio/thunder.mp3"></audio>
+        <audio id="audioApplause" src="audio/applause.mp3"></audio>
+        <audio id="audioDrumroll" src="audio/drumroll.mp3"></audio>
+        <audio id="audioDrumend" src="audio/drumend.mp3"></audio>
+        <audio id="audioSpotlight" src="audio/spotlight.mp3"></audio>
+        <audio id="audioBirds" src="audio/birds.mp3"></audio>
+
+        <script type="text/javascript" src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+        
+        <h1 id="title-header">MPSlayer</h1>
+        <div id="root-container" class="light-container">
+            <button role="button" class="audio-button" onclick="onClickKnock();">ノック</button>
+            <button role="button" class="audio-button" onclick="onClickFrog();">カエル</button>
+            <button role="button" class="audio-button" onclick="onClickDoor();">ドア</button>
+            <button role="button" class="audio-button" onclick="onClickRain();">雨&nbsp;(再生)</button>
+            <button role="button" class="audio-button" onclick="onClickRainStop();">雨&nbsp;(停止)</button>
+            <button role="button" class="audio-button" onclick="onClickThunder();">落雷</button>
+            <button role="button" class="audio-button" onclick="onClickApplause();">拍手</button>
+            <button role="button" class="audio-button" onclick="onClickDrumroll();">ドラムロール</button>
+            <button role="button" class="audio-button" onclick="onClickDrumend();">ドラムロールエンド</button>
+            <button role="button" class="audio-button" onclick="onClickSpotlight();">スポットライト</button>
+            <button role="button" class="audio-button" onclick="onClickBirds();">鳥&nbsp;(再生)</button>
+            <button role="button" class="audio-button" onclick="onClickBirdsStop();">鳥&nbsp;(停止)</button>
+        </div>
+    </body>
+</html>
