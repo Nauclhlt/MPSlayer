@@ -124,6 +124,9 @@ function onClickDown()
 
 function onClickSpeed()
 {
+    let prev = document.getElementById('audioEngine');
+    prev.pause();
+    prev.currentTime = 0;
     let audio = document.getElementById('audioSpeed');
     audio.currentTime = 0;
     audio.play();
