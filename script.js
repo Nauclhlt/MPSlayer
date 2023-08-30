@@ -75,7 +75,7 @@ function onClickSpotlight()
 
 function onClickBirds()
 {
-    let audio = document.getElementById("audioEngine");
+    let audio = document.getElementById("audioBirds");
     audio.currentTime = 0;
     audio.play();
 }
@@ -103,7 +103,7 @@ function onClickSolongStop()
 
 function onClickEngine()
 {
-    let audio = document.getElementById("audioBirds");
+    let audio = document.getElementById("audioEngine");
     audio.currentTime = 0;
     audio.play();
 }
