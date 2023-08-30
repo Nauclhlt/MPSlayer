@@ -29,7 +29,7 @@ body {
     margin-top: 32px;
     width: 60%;
     border-radius: 12px;
-    border: 2px solid linear-gradient(45deg, aqua, palegreen);
+    border: 2px solid aqua;
     background-color: rgba(255, 0, 128, 0.2);
 
     display: inline-flex;
@@ -52,5 +52,5 @@ body {
 
 .audio-button:hover {
     box-shadow: rgb(0, 0, 0, 0.5) 0px 20px 30px -10px;
-    background-color: aqua;
+    background-color: rgb(255, 0, 93);
 }
