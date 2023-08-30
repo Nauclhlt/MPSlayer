@@ -103,6 +103,7 @@ function onClickSolongStop()
 
 function onClickEngine()
 {
+    alert('はい');
     let audio = document.getElementById('audioEngine');
     audio.currentTime = 0;
     audio.play();
