@@ -114,3 +114,24 @@ function onClickEngineStop()
     audio.pause();
     audio.currentTime = 0;
 }
+
+function onClickDown()
+{
+    let audio = document.getElementById('audioDown');
+    audio.currentTime = 0;
+    audio.play();
+}
+
+function onClickSpeed()
+{
+    let audio = document.getElementById('audioSpeed');
+    audio.currentTime = 0;
+    audio.play();
+}
+
+function onClickSpeedStop()
+{
+    let audio = document.getElementById('audioSpeed');
+    audio.pause();
+    audio.currentTime = 0;
+}
