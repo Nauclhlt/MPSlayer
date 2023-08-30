@@ -75,7 +75,7 @@ function onClickSpotlight()
 
 function onClickBirds()
 {
-    let audio = document.getElementById("audioBirds");
+    let audio = document.getElementById("audioEngine");
     audio.currentTime = 0;
     audio.play();
 }
