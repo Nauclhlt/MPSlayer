@@ -103,11 +103,9 @@ function onClickSolongStop()
 
 function onClickEngine()
 {
-    alert('呼び出し');
-    let audio = document.getElementById('audioEngine');_
+    let audio = document.getElementById('audioEngine');
     audio.currentTime = 0;
     audio.play();
-    alert('再生できた');
 }
 
 function onClickEngineStop()
