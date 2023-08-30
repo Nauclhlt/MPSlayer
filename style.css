@@ -52,5 +52,5 @@ body {
 
 .audio-button:hover {
     box-shadow: rgb(0, 0, 0, 0.5) 0px 20px 30px -10px;
-    background-color: aqua; //rgb(255, 0, 93);
+    background-color: aqua;
 }
