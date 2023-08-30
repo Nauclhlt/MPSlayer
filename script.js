@@ -103,8 +103,7 @@ function onClickSolongStop()
 
 function onClickEngine()
 {
-    alert('はい');
-    let audio = document.getElementById('audioEngine');
+    let audio = document.getElementById("audioBirds");
     audio.currentTime = 0;
     audio.play();
 }
