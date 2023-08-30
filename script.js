@@ -22,6 +22,7 @@ function onClickDoor()
 function onClickRain()
 {
     let audio = document.getElementById("audioRain");
+    audio.volume = 0.7;
     audio.currentTime = 0;
     audio.play();
 }
@@ -96,6 +97,20 @@ function onClickSolong()
 function onClickSolongStop()
 {
     let audio = document.getElementById("audioSolong");
+    audio.pause();
+    audio.currentTime = 0;
+}
+
+function onClickEngine()
+{
+    let audio = document.getElementById('audioEngine');
+    audio.currentTime = 0;
+    audio.play();
+}
+
+function onClickEngineStop()
+{
+    let audio = document.getElementById('audioEngine');
     audio.pause();
     audio.currentTime = 0;
 }
