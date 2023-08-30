@@ -10,6 +10,7 @@ body {
 
 #root-container {
     padding: 32px;
+    padding-bottom: 32px;
 }
 
 #title-header {
