@@ -29,10 +29,12 @@ function onClickRain()
 
 function onClickRainFade()
 {
+    alert('fade');
     let audio = document.getElementById('audioRain');
     vol = 0.7;
     t = setInterval(() => {
         vol -= 0.1;
+        alert('no error');
         audio.volume = vol;
         if (vol <= 0 )
         {
