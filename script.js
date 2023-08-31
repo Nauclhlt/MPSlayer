@@ -34,7 +34,6 @@ function onClickRainFade()
     vol = 0.7;
     t = setInterval(() => {
         vol -= 0.1;
-        alert('no error');
         audio.volume = vol;
         if (vol <= 0 )
         {
@@ -42,6 +41,7 @@ function onClickRainFade()
             audio.currentTime = 0;
             audio.volume = 0.7;
             clearInterval(t);
+            return;
         }
     }, 100 );
 }
