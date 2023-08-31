@@ -29,21 +29,24 @@ function onClickRain()
 
 function onClickRainFade()
 {
-    alert('fade');
     let audio = document.getElementById('audioRain');
-    vol = 0.7;
-    t = setInterval(() => {
-        vol -= 0.1;
-        audio.volume = vol;
-        if (vol <= 0 )
-        {
-            audio.pause();
-            audio.currentTime = 0;
-            audio.volume = 0.7;
-            clearInterval(t);
-            return;
-        }
-    }, 100 );
+    audio.volume = 0.7;
+    
+    let timerid = setInterval( ()=>{
+      // ボリュームが0になったら終了
+      if( (bgm.volume - 0.1) <= 0 ){
+          audio.volume = 0;
+          audio.pause();
+          audio.volume = 1;
+          audio.currentTime = 0;
+          clearInterval(timerid);  //タイマー解除
+      }
+      
+      else{
+        audio.volume -= 0.1;
+      }
+    }
+    , 100); //0.2秒ごとに繰り返す
 }
 
 function onClickRainStop()
