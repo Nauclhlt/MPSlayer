@@ -34,13 +34,12 @@ function onClickRainFade()
     audio.volume = 0.7;
     
     let timerid = setInterval( ()=>{
-      // ボリュームが0になったら終了
       if( (audio.volume - 0.1) <= 0 ){
           audio.volume = 0;
           audio.pause();
           audio.volume = 1;
           audio.currentTime = 0;
-          clearInterval(timerid);  //タイマー解除
+          clearInterval(timerid);
           alert('kaijo');
       }
       
@@ -48,7 +47,7 @@ function onClickRainFade()
         audio.volume -= 0.1;
       }
     }
-    , 100); //0.2秒ごとに繰り返す
+    , 100);
 }
 
 function onClickRainStop()
