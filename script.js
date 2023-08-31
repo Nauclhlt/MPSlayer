@@ -29,6 +29,7 @@ function onClickRain()
 
 function onClickRainFade()
 {
+    alert('update');
     let audio = document.getElementById('audioRain');
     audio.volume = 0.7;
     
@@ -40,6 +41,7 @@ function onClickRainFade()
           audio.volume = 1;
           audio.currentTime = 0;
           clearInterval(timerid);  //タイマー解除
+          alert('kaijo');
       }
       
       else{
