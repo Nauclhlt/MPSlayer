@@ -34,7 +34,7 @@ function onClickRainFade()
     
     let timerid = setInterval( ()=>{
       // ボリュームが0になったら終了
-      if( (bgm.volume - 0.1) <= 0 ){
+      if( (audio.volume - 0.1) <= 0 ){
           audio.volume = 0;
           audio.pause();
           audio.volume = 1;
