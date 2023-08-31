@@ -27,6 +27,23 @@ function onClickRain()
     audio.play();
 }
 
+function onClickRainFade()
+{
+    let audio = document.getElementById('audioRain');
+    vol = 0.7;
+    t = setInterval(() => {
+        vol -= 0.1;
+        audio.volume = vol;
+        if (vol <= 0 )
+        {
+            audio.pause();
+            audio.currentTime = 0;
+            audio.volume = 0.7;
+            clearInterval(t);
+        }
+    }, 100 );
+}
+
 function onClickRainStop()
 {
     let audio = document.getElementById("audioRain");
