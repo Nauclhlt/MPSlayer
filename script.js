@@ -168,3 +168,10 @@ function onClickHeartbeats()
     audio.currentTime = 0;
     audio.play();
 }
+
+function onClickFF()
+{
+    let audio = document.getElementById('audioFF');
+    audio.currentTime = 0;
+    audio.play();
+}
