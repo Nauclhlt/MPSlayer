@@ -161,3 +161,10 @@ function onClickSpeedStop()
     audio.pause();
     audio.currentTime = 0;
 }
+
+function onClickHeartbeats()
+{
+    let audio = document.getElementById('audioHeartbeats');
+    audio.currentTime = 0;
+    audio.play();
+}
