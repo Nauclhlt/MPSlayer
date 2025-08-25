@@ -5,12 +5,13 @@
 
 body {
     background: linear-gradient(to right, rgb(20, 20, 120), rgb(230, 10, 90));
-    
+    font-family: sans-serif;
+    color: white;
+    line-height: 1.6;
 }
 
 #root-container {
     padding: 32px;
-    padding-bottom: 32px;
 }
 
 #title-header {
@@ -18,40 +19,59 @@ body {
     text-align: center;
     color: white;
     margin-top: 24px;
-    background: -webkit-linear-gradient(90deg, aqua, rgb(60, 60, 255));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-weight: bold;
 }
 
 .light-container {
-    margin-left: 20%;
-    margin-top: 32px;
-    width: 60%;
+    margin: 32px auto;
+    width: min(90%, 600px);
     border-radius: 12px;
-    border: none;
-    background-color: rgba(255, 30, 128, 0.3);
-
-    display: inline-flex;
+    background-color: rgba(255, 30, 128, 0.15);
+    display: flex;
     flex-direction: column;
+    padding: 24px;
 }
 
+/* 見出し */
+h1, h2, h3 {
+    font-weight: bold;
+    margin: 16px 0 8px;
+    line-height: 1.4;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+/* 段落 */
+p {
+    margin: 8px 0 16px;
+    font-size: 16px;
+}
+
+/* ボタン */
 .audio-button {
-    font-size: 36px;
+    font-size: 20px;
     color: white;
     text-align: center;
     border: none;
-    padding-block: 16px;
-    border-radius: 12px;
+    padding: 12px;
+    border-radius: 8px;
     background-color: rgb(220, 0, 80);
-    box-shadow: rgb(20, 20, 20, 0.4) 0px 20px 30px -10px;
-    margin-block: 12px;
-    transition: all 200ms;
-    display: block;
+    margin: 8px 0;
+    transition: background-color 200ms;
+    cursor: pointer;
 }
 
 .audio-button:hover {
-    box-shadow: rgb(0, 0, 0, 0.5) 0px 20px 30px -10px;
     background-color: rgb(255, 0, 93);
 }
 
