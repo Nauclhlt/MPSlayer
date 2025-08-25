@@ -4,9 +4,9 @@
 }
 
 body {
-    background: linear-gradient(to right, rgb(20, 20, 120), rgb(230, 10, 90));
+    background: linear-gradient(to right, rgb(245, 245, 255), rgb(255, 240, 245));
     font-family: sans-serif;
-    color: white;
+    color: #333;
     line-height: 1.6;
 }
 
@@ -17,19 +17,20 @@ body {
 #title-header {
     font-size: 48px;
     text-align: center;
-    color: white;
+    color: #444;
     margin-top: 24px;
     font-weight: bold;
 }
 
 .light-container {
     margin: 32px auto;
-    width: min(90%, 600px);
+    width: min(90%, 700px);
     border-radius: 12px;
-    background-color: rgba(255, 30, 128, 0.15);
+    background-color: rgba(255, 255, 255, 0.9);
     display: flex;
     flex-direction: column;
     padding: 24px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 /* 見出し */
@@ -37,6 +38,7 @@ h1, h2, h3 {
     font-weight: bold;
     margin: 16px 0 8px;
     line-height: 1.4;
+    color: #222;
 }
 
 h1 {
@@ -55,24 +57,25 @@ h3 {
 p {
     margin: 8px 0 16px;
     font-size: 16px;
+    color: #444;
 }
 
 /* ボタン */
 .audio-button {
-    font-size: 20px;
+    font-size: 18px;
     color: white;
     text-align: center;
     border: none;
     padding: 12px;
     border-radius: 8px;
-    background-color: rgb(220, 0, 80);
+    background-color: #e94e77;
     margin: 8px 0;
     transition: background-color 200ms;
     cursor: pointer;
 }
 
 .audio-button:hover {
-    background-color: rgb(255, 0, 93);
+    background-color: #ff6b9a;
 }
 
 .obs {
